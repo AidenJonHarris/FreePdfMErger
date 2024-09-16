@@ -6,7 +6,7 @@ h1{
 
 body{
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 50px rgb(107, 107, 107) inset;
+    box-shadow: 0 0 50px rgb(61, 59, 59) inset;
     margin: 0;
     padding: 0;
    
@@ -57,7 +57,7 @@ body{
     margin-bottom: 190px;
     font-family: poppins, Static;
     font-weight: 900;
-    color: #ec0707;
+    color: #2b2beb;
     text-shadow: 3px 5px 4px #000000;
  
 }.ol{
@@ -77,19 +77,18 @@ body{
     height: 87px; 
     margin-left: 20px; /* Move logo to the left */
 
-}.active{
+ }.todocx{
     size: large;
     font-weight: 800;
     font-family: poppins, Static;
-
-}
+ }
 
 .slideshow {
     margin-right: 1190px;
     margin-bottom: -130px;
     height: 80px;
     overflow: auto;
-    color: #ff0000;
+    color: #4242dd;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     display:flex;
@@ -130,34 +129,19 @@ body{
     margin-top: 130px;
 }
 
-.About-section h1 {
-    font-family: Poppins, Static;
-    font-weight: 900;
-    color: #ec0707;
-    text-shadow: 2px 2px 2px #000000;
-    text-align: left;
-}
-
-.About-section p {
-    font-family: Poppins, Static;
-    font-weight: 300;
-}
-
 .upload-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px; /* Adjust height as needed */
-    background-color: #f30f0f; /* Background color */
-    border: 2px dashed #ff0000; /* Dashed border */
+    background-color: #1a1aac; /* Background color */
+    border: 2px dashed #1201fd67; /* Dashed border */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
     margin: 20px auto; /* Center horizontally */
     max-width: 800px; /* Max width */
     position: relative;
     text-align: center;
-    margin-bottom: 200px;
-    margin-top: 30px;
 }
 
 .upload-box {
@@ -207,7 +191,7 @@ body{
 
 .image-showcase{
     margin-left: 400px;
-    stroke: #f30f0f;
+    stroke: #00008b;
     margin-top: -110px;
 }
 
@@ -304,8 +288,46 @@ footer {
     position: absolute;
 }
 
-.parallax-item1{
-    text-align: center; 
-    margin-top: 250px;
-    margin-left: -1500px;
+/*.parallax-item1{
+    width: 5px;
+    height: 5px;
+    size: smaller;
+    padding: 2px;
+    position: relative;
+    margin-bottom: -50px;
+}*/
+
+
+#hovering-image {
+    position: fixed; /* Make sure this is absolute to allow left/top to work */
+    left: 5;
+    top: 5;
+    z-index: 1000;
+    animation: moveXY 5s infinite alternate ease-in-out;
+}mg {
+    display: block; /* Ensures the image takes up the correct space */
 }
+
+@keyframes moveXY {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 50px;
+        top: 50px;
+    }
+    50% {
+        left: 100px;
+        top: 100px;
+    }
+    75% {
+        left: 150px;
+        top: 150px;
+    }
+    100% {
+        left: 200px;
+        top: 200px;
+    }
+}
+

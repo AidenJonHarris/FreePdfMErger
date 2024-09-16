@@ -1,0 +1,16 @@
+<Database>
+	<table1>
+		<item>My Item 1</item>
+		<item>My Item 2</item>
+		<item>My Item 3</item>
+		<item>My Item 4</item>
+	</table1>
+
+
+        <table2>
+		<item>My Item 1</item>
+		<item>My Item 2</item>
+		<item>My Item 3</item>
+		<item>My Item 4</item>
+	</table2>
+</Database>
